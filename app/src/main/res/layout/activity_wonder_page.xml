@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fadingEdge="horizontal"
+    tools:context=".Activity_Wonder_Page">
+
+    <ImageView
+        android:id="@+id/page_wonder_img"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/g_wonder_27" />
+
+    <TextView
+        android:id="@+id/page_wonder_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/twcenmt_reg"
+        android:gravity="center"
+        android:letterSpacing=".1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="PETRA"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_wonder_title" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_wonder_quote" />
+
+    <TextView
+        android:id="@+id/page_wonder_quote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/tnr_it"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="&quot;Match me with such marvels, save in Eastern clime, A rose-red city half as old as time!&quot;"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/divider7"
+        app:layout_constraintStart_toStartOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:fadingEdge="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/page_wonder_details"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/twcenmt_med"
+                android:text="Situated between the Red Sea and the Dead Sea, Petra is a city cut from the red sandstone around Wadi Musa (now part of Jordan) by the Nabataeans – who obviously had a lot of free time – around 400 BC. Mentioned in Egyptian, Greek and Biblical sources, the city would develop into a major caravan center, a vital crossroads between Arabia, Egypt and Syria to the north. Surrounded by mountains riddled with gorges and canyon passages, it was defensible; but it was the ingenious and extensive system of cisterns and reservoirs in the middle of a desert that made it a trade center.\n\nAt its peak, Petra was home to perhaps 20 thousand inhabitants, and served as the capital of the Nabataean kingdom. That is, until the Romans arrived and annexed it in 106 AD. Struck by a series of earthquakes, as well as Roman taxes, it was essentially abandoned two hundred years after – not to be “discovered” until 1812 by the Swiss explorer Johann Burckhardt."
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

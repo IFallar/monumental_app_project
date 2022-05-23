@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/home_slider"
+        android:layout_width="411dp"
+        android:layout_height="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sliderAnimationDuration="1500"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderStartAutoCycle="true"
+        app:sliderIndicatorEnabled="false"
+        app:sliderScrollTimeInSec="3"
+        >
+
+    </com.smarteist.autoimageslider.SliderView>
+
+    <TextView
+        android:id="@+id/lbl_home_title"
+        android:layout_width="398dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/tnr"
+        android:gravity="center"
+        android:letterSpacing=".15"
+        android:text="MONUMENTAL"
+        android:textColor="#FFFFFF"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_slider" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="667dp"
+        android:layout_height="281dp"
+        android:background="#1E1D1D"
+        android:rotation="-25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="727dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="20dp"
+        android:background="#0C0C0C"
+        android:rotation="17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_home_title" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_art"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="250dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/img_btn_art"
+        android:layout_width="73dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/greatart_icon" />
+
+    <ImageButton
+        android:id="@+id/img_btn_people"
+        android:layout_width="101dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_art"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/people_button_" />
+
+    <ImageButton
+        android:id="@+id/img_btn_wonders"
+        android:layout_width="72dp"
+        android:layout_height="94dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_art"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_art"
+        app:srcCompat="@drawable/wonder_button" />
+
+    <TextView
+        android:id="@+id/lbl_home_quote"
+        android:layout_width="214dp"
+        android:layout_height="97dp"
+        android:fontFamily="@font/twcenmt_med"
+        android:gravity="center"
+        android:letterSpacing=".05"
+        android:text="&quot;NUMBERLESS ARE THE WORLD'S WONDERS, BUT NONE MORE WONDERFUL THAN MAN&quot;"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

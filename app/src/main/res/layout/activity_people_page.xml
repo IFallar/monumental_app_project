@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Activity_People_Page">
+
+    <ImageView
+        android:id="@+id/page_people_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:adjustViewBounds="false"
+        android:paddingTop="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/p_horatio" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/page_people_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/twcenmt_reg"
+                android:letterSpacing=".05"
+                android:lineSpacingExtra="3dp"
+                android:padding="10dp"
+                android:text="Britain's most beloved sailor"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="340dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/page_people_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/twcenmt_light"
+                android:padding="10dp"
+                android:text="Born on 29 September 1758 in Burnham Thorpe, Norfolk, Horatio Nelson was the sixth of the 11 children of a clergyman. He joined the navy aged 12, on a ship commanded by a maternal uncle. He became a captain at 20, and saw service in the West Indies, Baltic and Canada. He married Frances Nisbet in 1787 in Nevis, and returned to England with his bride to spend the next five years on half-pay, frustrated at the lack of a command.\n\nWhen Britain entered the French Revolutionary Wars in 1793, Nelson was given command of the Agamemnon. He served in the Mediterranean, helped capture Corsica and saw battle at Calvi (where he lost the sight in his right eye). He would later lose his right arm at the Battle of Santa Cruz de Tenerife in 1797.\n\nAs a commander he was known for bold action, and the occasional disregard of orders from his seniors. This defiance brought him victories against the Spanish off Cape Vincent in 1797, and at the Battle of Copenhagen four years later, where he ignored orders to cease action by putting his telescope to his blind eye and claiming he couldn't seen the signal to withdraw.\n\nAt the Battle of the Nile in 1798, he successfully destroyed Napoleon's fleet and thus his bid for a direct trade route to India. Nelson's next posting took him to Naples, where he fell in love with Emma, Lady Hamilton. Although they remained in their respective marriages, Nelson and Emma Hamilton considered each other soul-mates and had a child together, Horatia, in 1801. Earlier that same year, Nelson was promoted to vice-admiral.\n\nOver the period 1794 to 1805, under Nelson's leadership, the Royal Navy proved its supremacy over the French. His most famous engagement, at Cape Trafalgar, saved Britain from threat of invasion by Napoleon, but it would be his last. Before the battle on 21 October 1805, Nelson sent out the famous signal to his fleet 'England expects that every man will do his duty'. He was killed by a French sniper a few hours later while leading the attack on the combined French and Spanish fleet. His body was preserved in brandy and transported back to England where he was given a state funeral."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/page_people_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/twcenmt_reg"
+        android:gravity="bottom"
+        android:letterSpacing=".05"
+        android:lineSpacingExtra="2sp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="HORATIO NELSON"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
