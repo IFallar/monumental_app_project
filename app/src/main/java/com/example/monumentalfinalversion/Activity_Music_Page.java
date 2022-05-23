@@ -46,7 +46,6 @@ public class Activity_Music_Page extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mediaPlayer = MediaPlayer.create(Activity_Music_Page.this, file);
                 mediaPlayer.start();
             }
         });
@@ -62,11 +61,21 @@ public class Activity_Music_Page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mediaPlayer.stop();
+                mediaPlayer.release();
+                mediaPlayer = MediaPlayer.create(Activity_Music_Page.this, file);
             }
         });
 
     }
 
-
+    @Override
+    public void onBackPressed(){
+        if (mediaPlayer != null){
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
+        finish();
+        super.onBackPressed();
+    }
 
 }
